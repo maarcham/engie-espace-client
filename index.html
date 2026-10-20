@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ENGIE | Espace Client</title>
+<title>ENGIE | Mes factures</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -19,123 +19,107 @@
     </a>
 
     <nav class="main-nav" aria-label="Navigation principale">
-      <a href="#offres">Nos offres</a>
-      <a href="#conseils">Conseils</a>
-      <a href="#aide">Aide</a>
-      <a href="factures.html" class="nav-cta-ghost">Mon espace client</a>
+      <a href="#" class="nav-cta-ghost">Mon profil</a>
+      <a href="#" class="btn btn-ghost btn-sm">Se déconnecter</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <p class="hero-kicker">Espace Client</p>
-        <h1>Toutes vos factures d'énergie, réunies au même endroit.</h1>
-        <p class="hero-sub">
-          Consultez, téléchargez et suivez l'historique de vos factures d'électricité
-          et de gaz en quelques clics, où que vous soyez.
-        </p>
-        <div class="hero-actions">
-          <a href="factures.html" class="btn btn-primary">Accéder à mes factures</a>
-          <a href="#aide" class="btn btn-ghost">Créer mon compte</a>
+<main class="account-main">
+  <div class="container">
+
+    <aside class="account-sidebar">
+      <p class="sidebar-title">Mon espace</p>
+      <nav class="sidebar-nav">
+        <a href="#" class="active">Mes factures</a>
+        <a href="#">Ma consommation</a>
+        <a href="#">Mon contrat</a>
+        <a href="#">Mes paiements</a>
+        <a href="#">Mes informations</a>
+      </nav>
+    </aside>
+
+    <section class="account-content">
+      <div class="account-header">
+        <div>
+          <h1>Mes factures</h1>
+          <p class="account-sub">Contrat électricité &amp; gaz — N° 00123 456 789</p>
+        </div>
+        <a href="#" class="btn btn-primary">Télécharger toutes les factures</a>
+      </div>
+
+      <div class="filters-bar">
+        <label class="filter-field">
+          <span>Année</span>
+          <select>
+            <option>2026</option>
+            <option>2025</option>
+            <option>2024</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span>Statut</span>
+          <select>
+            <option>Toutes</option>
+            <option>Payée</option>
+            <option>En attente</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span>Énergie</span>
+          <select>
+            <option>Toutes</option>
+            <option>Électricité</option>
+            <option>Gaz</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="invoice-table" role="table" aria-label="Liste des factures">
+        <div class="invoice-row invoice-head" role="row">
+          <span role="columnheader">N° facture</span>
+          <span role="columnheader">Date d'émission</span>
+          <span role="columnheader">Période</span>
+          <span role="columnheader">Énergie</span>
+          <span role="columnheader">Montant</span>
+          <span role="columnheader">Statut</span>
+          <span role="columnheader">Document</span>
+        </div>
+
+        <div class="invoice-row" role="row">
+          <span>F-2026-000912</span><span>01/10/2026</span><span>Septembre 2026</span><span>Électricité + Gaz</span><span>87,40 €</span><span class="badge badge-ok">Payée</span><span><a href="#" class="link-pdf">Télécharger</a></span>
+        </div>
+        <div class="invoice-row" role="row">
+          <span>F-2026-000845</span><span>01/09/2026</span><span>Août 2026</span><span>Électricité + Gaz</span><span>79,10 €</span><span class="badge badge-ok">Payée</span><span><a href="#" class="link-pdf">Télécharger</a></span>
+        </div>
+        <div class="invoice-row" role="row">
+          <span>F-2026-000781</span><span>01/08/2026</span><span>Juillet 2026</span><span>Électricité + Gaz</span><span>92,30 €</span><span class="badge badge-ok">Payée</span><span><a href="#" class="link-pdf">Télécharger</a></span>
+        </div>
+        <div class="invoice-row" role="row">
+          <span>F-2026-000716</span><span>01/07/2026</span><span>Juin 2026</span><span>Électricité + Gaz</span><span>74,95 €</span><span class="badge badge-ok">Payée</span><span><a href="#" class="link-pdf">Télécharger</a></span>
+        </div>
+        <div class="invoice-row" role="row">
+          <span>F-2026-000652</span><span>01/06/2026</span><span>Mai 2026</span><span>Électricité + Gaz</span><span>68,20 €</span><span class="badge badge-ok">Payée</span><span><a href="#" class="link-pdf">Télécharger</a></span>
+        </div>
+        <div class="invoice-row" role="row">
+          <span>F-2026-000588</span><span>01/05/2026</span><span>Avril 2026</span><span>Électricité + Gaz</span><span>71,55 €</span><span class="badge badge-pending">En attente</span><span><a href="#" class="link-pdf">Télécharger</a></span>
+        </div>
+        <div class="invoice-row" role="row">
+          <span>F-2026-000521</span><span>01/04/2026</span><span>Mars 2026</span><span>Électricité + Gaz</span><span>83,00 €</span><span class="badge badge-ok">Payée</span><span><a href="#" class="link-pdf">Télécharger</a></span>
+        </div>
+        <div class="invoice-row" role="row">
+          <span>F-2026-000459</span><span>01/03/2026</span><span>Février 2026</span><span>Électricité + Gaz</span><span>95,10 €</span><span class="badge badge-ok">Payée</span><span><a href="#" class="link-pdf">Télécharger</a></span>
         </div>
       </div>
 
-      <div class="hero-card" aria-hidden="true">
-        <div class="hero-card-top">
-          <span>Espace Client</span>
-          <span class="dot dot-green"></span>
-        </div>
-        <div class="hero-card-row">
-          <div>
-            <p class="hc-label">Dernière facture</p>
-            <p class="hc-value">87,40 €</p>
-          </div>
-          <span class="badge badge-ok">Payée</span>
-        </div>
-        <div class="hero-card-row">
-          <div>
-            <p class="hc-label">Prochaine échéance</p>
-            <p class="hc-value">15 nov. 2026</p>
-          </div>
-          <span class="badge badge-pending">À venir</span>
-        </div>
-        <div class="hero-card-chart">
-          <span style="height:30%"></span>
-          <span style="height:55%"></span>
-          <span style="height:40%"></span>
-          <span style="height:70%"></span>
-          <span style="height:50%"></span>
-          <span style="height:85%"></span>
-        </div>
+      <div class="pagination">
+        <button class="page-btn" disabled>&larr; Précédent</button>
+        <span class="page-current">Page 1 / 3</span>
+        <button class="page-btn">Suivant &rarr;</button>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="features" id="offres">
-    <div class="container">
-      <h2>Gérez votre énergie en toute simplicité</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon icon-invoice"></div>
-          <h3>Mes factures</h3>
-          <p>Retrouvez l'ensemble de vos factures d'électricité et de gaz, et téléchargez-les en PDF.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-consumption"></div>
-          <h3>Suivi de consommation</h3>
-          <p>Visualisez l'évolution de votre consommation mois par mois pour mieux maîtriser votre budget.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-payment"></div>
-          <h3>Paiement en ligne</h3>
-          <p>Réglez vos factures en ligne et activez le prélèvement automatique en 2 minutes.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon icon-support"></div>
-          <h3>Assistance dédiée</h3>
-          <p>Un conseiller ENGIE disponible pour répondre à toutes vos questions sur votre contrat.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="preview" id="conseils">
-    <div class="container preview-inner">
-      <div class="preview-text">
-        <h2>Vos factures, accessibles 24h/24</h2>
-        <p>
-          Depuis votre espace client, retrouvez l'historique complet de vos factures,
-          leur statut de paiement et téléchargez vos justificatifs en un clic.
-        </p>
-        <a href="factures.html" class="btn btn-primary">Voir mes factures</a>
-      </div>
-      <div class="preview-table" aria-hidden="true">
-        <div class="pt-row pt-head">
-          <span>Date</span><span>Période</span><span>Montant</span><span>Statut</span>
-        </div>
-        <div class="pt-row">
-          <span>01/10/2026</span><span>Sept. 2026</span><span>87,40 €</span><span class="badge badge-ok">Payée</span>
-        </div>
-        <div class="pt-row">
-          <span>01/09/2026</span><span>Août 2026</span><span>79,10 €</span><span class="badge badge-ok">Payée</span>
-        </div>
-        <div class="pt-row">
-          <span>01/08/2026</span><span>Juil. 2026</span><span>92,30 €</span><span class="badge badge-ok">Payée</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta" id="aide">
-    <div class="container cta-inner">
-      <h2>Pas encore de compte ?</h2>
-      <p>Créez votre espace client ENGIE en quelques minutes et pilotez votre contrat en toute autonomie.</p>
-      <a href="factures.html" class="btn btn-primary btn-lg">Créer mon espace client</a>
-    </div>
-  </section>
+  </div>
 </main>
 
 <footer class="site-footer">
