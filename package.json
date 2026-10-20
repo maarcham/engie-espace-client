@@ -1,0 +1,13 @@
+{
+  "name": "engie-espace-client",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page ENGIE - espace client factures (démo statique)",
+  "scripts": {
+    "dev": "live-server --port=3000 --no-browser",
+    "start": "live-server --port=3000 --no-browser"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
