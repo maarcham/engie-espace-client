@@ -4,10 +4,7 @@
   "private": true,
   "description": "Landing page ENGIE - espace client factures (démo statique)",
   "scripts": {
-    "dev": "live-server --port=3000 --no-browser",
-    "start": "live-server --port=3000 --no-browser"
-  },
-  "devDependencies": {
-    "live-server": "^1.2.2"
+    "dev": "node server.js",
+    "start": "node server.js"
   }
 }
